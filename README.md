@@ -12,4 +12,8 @@ A recreation might not be an accurate description since I am making my own sprit
 
 # Billboard Rotation
 This is a very interesting feature of classic games. Some sprites in games such as Doom 1 and Doom 2 are 2D, however when the player walks around these gameobjects, they appear to be 3D. This is done by letting the sprites rotate toward the player. In my game, I've implemented this feature by creating an axis of rotation along the y-axis and so naturally the plane of rotation is the xz-plane. Note that in Unity, the left/right and forward/backward motion components are both restricted to the x and z axes, whereas the vertical motion components are in the y axis; this is the case for a 3D engine. Therefore, in order to recreate this rendering technique, I created this simple diagram:
+
 ![Screenshot 2023-05-28 225601](https://github.com/ArmandtErasmus/doom-clone/assets/115916073/7614864a-3802-4412-89b0-1600cd8f4ff2)
+
+# Mathematics
+This is the fun part :)... I'll upload it later
