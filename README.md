@@ -16,4 +16,4 @@ This is a very interesting feature of classic games. Some sprites in games such 
 ![Screenshot 2023-05-28 225601](https://github.com/ArmandtErasmus/doom-clone/assets/115916073/7614864a-3802-4412-89b0-1600cd8f4ff2)
 
 # Mathematics
-This is the fun part :)... I'll upload it later
+If we place our frame of reference at the origin of the gameobject that has to rotate, then it is trivial to find the position of the player since we create a public gameobject called player and assign it to the player gameobject in the inspector tab in Unity. Then to find the z and x coordinates, we simply use player.transform.x and player.transform.z. Now to find the angle between the rotation object and the player (the angle by which the sprite should rotate by), we use the built in method, Mathf.Atan2(x,z). After this, we create a new Quaternion object and pass in (x=0, y=angle, z=0). We then call this method in the update() method to calculate the rotation angle and update the direction in which the rotation sprite is facing.
